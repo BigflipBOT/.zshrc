@@ -14,5 +14,10 @@ Then you should probably run `zkbd` to setup your special keys:
 ```sh
 zkbd
 ```
+If you are interested in docker / podman completion, run following command:
+```sh
+mkdir -p ~/.docker/completions && docker completion zsh > ~/.docker/completions/_docker
+```
+
 
 There is no starship config in this repo. If you would like to get the same config that is present in the demo you can get it from [here](https://github.com/BigflipBOT/swayfx-cyberpunk-dotfiles/blob/master/starship.toml). In addition to get it working you should also install nerd font icons.
