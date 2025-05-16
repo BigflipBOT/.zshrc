@@ -1,6 +1,7 @@
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export EDITOR=vim
 bindkey -v
+FPATH="$HOME/.docker/completions:$FPATH"
 autoload -Uz zkbd
 
 # The following lines were added by compinstall
@@ -46,7 +47,6 @@ ZSH_HIGHLIGHT_STYLES[builtin]='fg=cyan'
 # Autostart
 autoload -Uz promptinit
 # promptinit
-#prompt bigfade
 
 #clear
 fastfetch
