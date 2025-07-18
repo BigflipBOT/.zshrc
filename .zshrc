@@ -48,35 +48,44 @@ ZSH_HIGHLIGHT_STYLES[builtin]='fg=cyan'
 autoload -Uz promptinit
 # promptinit
 
-#clear
+clear
 fastfetch
 
 # Aliases
-#alias vim='nvim'
+alias vim='nvim'
 alias hibernate='systemctl hibernate'
+alias neofetch='fastfetch'
 alias ':q'='exit'
 alias wikiman='wikiman -s arch'
+alias ssh='kitten ssh'
+alias ls='eza'
+alias ll='eza -lha'
+alias grep='rg --no-line-number --color=always'
+alias find='fd'
+alias cd='z'
+alias cat='bat'
 
 # Colours
 #export TERM=xterm-color
 alias diff='diff --color=always'
 alias yay='yay --color=auto'
-alias grep='grep --color=auto'
-alias grep='rg --no-line-number --color=always'
+# alias grep='grep --color=auto'
 alias ip='ip -color=auto'
 alias ss='grc ss'
 alias pacman='pacman --color=always'
 alias dmesg='dmesg --color=always'
 export LESS='-R --use-color -Dd+r$Du+b$'
-alias ls='ls --color=always'
-alias cat='bat'
 alias ping='grc ping'
 alias traceroute='grc traceroute'
 alias ps='grc ps'
 alias xxdc='xxd -R always'
 
-
+# zoxide setup. Must be beow compinit.
+eval "$(zoxide init zsh)"
 
 # End of the file. Do not insert anything below! Needed for corectness of syntax highlight
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
+
+# Created by `pipx` on 2025-06-06 05:54:12
+export PATH="$PATH:/home/filip/.local/bin"
