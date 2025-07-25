@@ -55,7 +55,7 @@ fastfetch
 alias vim='nvim'
 alias hibernate='systemctl hibernate'
 alias neofetch='fastfetch'
-alias ':q'='exit'
+alias 'q'='exit'
 alias wikiman='wikiman -s arch'
 alias ssh='kitten ssh'
 alias ls='eza'
@@ -63,7 +63,11 @@ alias ll='eza -lha'
 alias grep='rg --no-line-number --color=always'
 alias find='fd'
 alias cd='z'
+alias y='yazi'
 alias cat='bat'
+alias c='fc -ln -1 | tr -d '\n' | wl-copy'
+alias m='man !!'
+alias n='ncmpcpp'
 
 # Colours
 #export TERM=xterm-color
